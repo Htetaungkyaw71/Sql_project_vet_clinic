@@ -80,7 +80,7 @@ INNER JOIN visits
 ON visits.animals_id = animals.id
 INNER JOIN vets ON visits.vets_id = vets.id
 GROUP BY animals.name
-ORDER BY num  LIMIT 1;
+ORDER BY num DESC;
 
 
 SELECT animals.name,visits.date FROM animals JOIN visits ON visits.animals_id = animals.id 
